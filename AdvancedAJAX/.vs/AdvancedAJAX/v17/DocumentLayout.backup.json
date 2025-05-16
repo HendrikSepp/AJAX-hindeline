@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -26,11 +26,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -43,7 +43,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Customer\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Customer\\Create.cshtml",
@@ -56,13 +56,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
               "ToolTip": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAAwHMAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAkwIYAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-16T09:36:43.176Z",
               "EditorCaption": ""
