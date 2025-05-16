@@ -1,3 +1,12 @@
+global using System.ComponentModel.DataAnnotations;
+global using System.ComponentModel.DataAnnotations.Schema;
+global using System.ComponentModel;
+global using Microsoft.EntityFrameworkCore;
+global using AdvancedAJAX.Models;
+global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.AspNetCore.Mvc.Rendering;
+global using AdvancedAJAX.Data;
+
 namespace AdvancedAJAX
 {
     public class Program
