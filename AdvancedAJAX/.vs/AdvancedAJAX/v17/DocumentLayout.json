@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\views\\city\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\city\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\views\\country\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\country\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\migrations\\20250516082944_removeonlinecascade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:migrations\\20250516082944_removeonlinecascade.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\views\\city\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\city\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|c:\\users\\opilane\\source\\repos\\ajax-hindeline\\advancedajax\\views\\city\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\city\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,63 +26,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\City\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\City\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\City\\Delete.cshtml",
-              "RelativeToolTip": "Views\\City\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Country\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Country\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Country\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Country\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-16T08:26:55.884Z",
+              "WhenOpened": "2025-05-16T08:41:04.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CountryController.cs",
+              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Controllers\\CountryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CountryController.cs",
+              "ToolTip": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Controllers\\CountryController.cs",
+              "RelativeToolTip": "Controllers\\CountryController.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAAuwFcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:37:27.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\City\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\City\\Details.cshtml",
-              "ToolTip": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\City\\Details.cshtml",
-              "RelativeToolTip": "Views\\City\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-16T08:26:18.574Z",
+              "Title": "20250516082944_RemoveOnlineCascade.cs",
+              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Migrations\\20250516082944_RemoveOnlineCascade.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250516082944_RemoveOnlineCascade.cs",
+              "ToolTip": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Migrations\\20250516082944_RemoveOnlineCascade.cs",
+              "RelativeToolTip": "Migrations\\20250516082944_RemoveOnlineCascade.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T08:29:44.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-16T08:22:09.32Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\City\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\City\\Index.cshtml",
-              "ToolTip": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\City\\Index.cshtml",
-              "RelativeToolTip": "Views\\City\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-16T08:20:51.219Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "CityController.cs",
               "DocumentMoniker": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\Controllers\\CityController.cs",
               "RelativeDocumentMoniker": "Controllers\\CityController.cs",

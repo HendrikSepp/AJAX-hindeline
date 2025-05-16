@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AdvancedAJAX")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+16500c8715b6b7b31eb175438acbe3d3b85d2e1e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+11442e6c24c5857885a7528df76effe714418fb6")]
 [assembly: System.Reflection.AssemblyProductAttribute("AdvancedAJAX")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AdvancedAJAX")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
