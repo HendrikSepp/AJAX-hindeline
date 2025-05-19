@@ -3,20 +3,16 @@
   "WorkspaceRootPath": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -42,40 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Customer\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Customer\\Create.cshtml",
               "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Customer\\Create.cshtml",
               "RelativeToolTip": "Views\\Customer\\Create.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAADEAAAAAAAAAAAAUwEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-16T09:37:13.7Z"
+              "WhenOpened": "2025-05-16T09:37:13.7Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
               "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAIwIYAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAGUAAAAAAAAAAADwv4AAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-16T09:36:43.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-16T09:34:59.248Z"
+              "WhenOpened": "2025-05-16T09:36:43.176Z"
             }
           ]
         }
