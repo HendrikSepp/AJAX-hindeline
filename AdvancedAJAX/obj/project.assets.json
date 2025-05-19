@@ -7750,23 +7750,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\opilane\\.nuget\\packages\\": {},
+    "C:\\Users\\sepph\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\AdvancedAJAX.csproj",
+      "projectUniqueName": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\AdvancedAJAX.csproj",
       "projectName": "AdvancedAJAX",
-      "projectPath": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\AdvancedAJAX.csproj",
-      "packagesPath": "C:\\Users\\opilane\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\opilane\\source\\repos\\AJAX-hindeline\\AdvancedAJAX\\obj\\",
+      "projectPath": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\AdvancedAJAX.csproj",
+      "packagesPath": "C:\\Users\\sepph\\.nuget\\packages\\",
+      "outputPath": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\opilane\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\sepph\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7775,7 +7775,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7834,7 +7833,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
