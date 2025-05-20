@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AdvancedAJAX.Controllers
 {
@@ -14,7 +15,7 @@ namespace AdvancedAJAX.Controllers
         public IActionResult Index()
         {
             List<City> Cities;
-            Cities = _context.Cities.ToList();
+            Cities = _context.Cities.Include(c => c.Country).ToList();
             return View(Cities);
         }
 
