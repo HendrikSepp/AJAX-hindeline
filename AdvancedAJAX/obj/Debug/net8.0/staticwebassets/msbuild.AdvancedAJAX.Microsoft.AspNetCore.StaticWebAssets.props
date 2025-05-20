@@ -72,6 +72,42 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\0e4dafdb-d0fd-4a41-a2cf-aaf00441e73f_126266476_207438314092323_1449225307731360772_n.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\2f474e25-229c-4719-bd09-f6041a5c687f_IMG_20230904_215606.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdvancedAJAX</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdvancedAJAX</BasePath>
+      <RelativePath>Images/2f474e25-229c-4719-bd09-f6041a5c687f_IMG_20230904_215606.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>62862yj7uy</Fingerprint>
+      <Integrity>TmjZL8aDxcsuBDxDGRP3oVQjbbkKqs2jTRrOEhKnIzw=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\2f474e25-229c-4719-bd09-f6041a5c687f_IMG_20230904_215606.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\454918ec-ddc5-40aa-8ce8-465ccce60a20_126266476_207438314092323_1449225307731360772_n.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>AdvancedAJAX</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/AdvancedAJAX</BasePath>
+      <RelativePath>Images/454918ec-ddc5-40aa-8ce8-465ccce60a20_126266476_207438314092323_1449225307731360772_n.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>kxg3ifktll</Fingerprint>
+      <Integrity>iBkNqyyJW3ufDOcCFjvDjDlUnJQknacwWamf0qGjDaY=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\454918ec-ddc5-40aa-8ce8-465ccce60a20_126266476_207438314092323_1449225307731360772_n.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\noimage.png'))">
       <SourceType>Package</SourceType>
       <SourceId>AdvancedAJAX</SourceId>
