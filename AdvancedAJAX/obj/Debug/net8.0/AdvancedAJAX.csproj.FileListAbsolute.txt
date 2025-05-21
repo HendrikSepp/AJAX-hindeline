@@ -568,3 +568,12 @@ D:\repos\AJAX-hindeline\AdvancedAJAX\obj\Debug\net8.0\refint\AdvancedAJAX.dll
 D:\repos\AJAX-hindeline\AdvancedAJAX\obj\Debug\net8.0\AdvancedAJAX.pdb
 D:\repos\AJAX-hindeline\AdvancedAJAX\obj\Debug\net8.0\AdvancedAJAX.genruntimeconfig.cache
 D:\repos\AJAX-hindeline\AdvancedAJAX\obj\Debug\net8.0\ref\AdvancedAJAX.dll
+D:\repos\AJAX-hindeline\AdvancedAJAX\bin\Debug\net8.0\libman.json
+D:\repos\AJAX-hindeline\AdvancedAJAX\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\repos\AJAX-hindeline\AdvancedAJAX\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\repos\AJAX-hindeline\AdvancedAJAX\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\repos\AJAX-hindeline\AdvancedAJAX\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\repos\AJAX-hindeline\AdvancedAJAX\bin\Debug\net8.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\repos\AJAX-hindeline\AdvancedAJAX\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\repos\AJAX-hindeline\AdvancedAJAX\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
+D:\repos\AJAX-hindeline\AdvancedAJAX\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll

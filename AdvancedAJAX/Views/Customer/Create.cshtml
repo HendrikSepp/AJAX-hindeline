@@ -10,13 +10,13 @@
         margin-left: -2px !important;
     }
 
-    .custom-file-button input[type=file]::-webkit-file-upload-button {
-        display: none;
-    }
+        .custom-file-button input[type=file]::-webkit-file-upload-button {
+            display: none;
+        }
 
-    .custom-file-button input[type=file]::file-selector-button {
-        display: none;
-    }
+        .custom-file-button input[type=file]::file-selector-button {
+            display: none;
+        }
 
     .custom-file-button:hover label {
         background-color: #dde0e3;
@@ -48,13 +48,20 @@
                 <input asp-for="EmailId" class="form-control" />
                 <span asp-validation-for="EmailId" class="text-danger"></span>
             </div>
+
             <div class="form-group">
                 <label asp-for="CountryId" class="control-label"></label>
-                <select asp-for="CountryId" class="form-control" asp-items="ViewBag.Countries" onchange="FillCities(this,'lstCity');"></select>
+                <div class="input-group">
+                    <select id="lstCountryId" asp-for="CountryId" class="form-control" asp-items="ViewBag.Countries"
+                            onchange="FillCities(this,'lstCity');"></select>
+                    <button class="btn btn-success" type="button" onclick="ShowCountryCreateModal();">
+                        +
+                    </button>
+                </div>
             </div>
             <div class="form-group">
                 <label asp-for="CityId" class="control-label"></label>
-                <select id="lstCity" asp-for="CityId" class ="form-control" asp-items="ViewBag.Cities"></select>
+                <select id="lstCity" asp-for="CityId" class="form-control" asp-items="ViewBag.Cities"></select>
             </div>
 
             <div class="col-md-12 btn-group pb-2">
@@ -64,7 +71,7 @@
                     <label asp-for="ProfilePhoto" class="control-label"></label>
 
                     <img id="PreviewPhoto" src="~/images/noimage.png" alt="Logo Image"
-                            width="125" height="125"/>
+                         width="125" height="125" />
 
                     <span asp-validation-for="PhotoUrl" class="text-danger"></span>
 
@@ -78,8 +85,8 @@
                         <input asp-for="ProfilePhoto" class="form-control custom-file-input" id="customFile">
                         <label class="input-group-text" for="customFile">Browse</label>
                     </div>
-                        </div>
-                        </div>
+                </div>
+            </div>
 
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -99,12 +106,25 @@
 </div>
 
 @section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
 
-<script type="text/javascript">
-      
+    <script type="text/javascript">
 
+            function ShowCountryCreateModal() {
+                $.ajax(
+                {
+                    url: "/country/CreateModalForm",
+                    type: 'get',
+                    success: function (response) {
+                        $("#DivCreateDialog").html(response);
+                        ShowCreateModalForm();
+                    }
+                });
+            return;
+        }
 
-</script>
+    </script>
 
 }
