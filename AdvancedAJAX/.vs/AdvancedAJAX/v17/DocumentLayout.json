@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\views\\city\\_createmodalform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\city\\_createmodalform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\views\\country\\_createmodalform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\country\\_createmodalform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:controllers\\citycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\views\\shared\\_createmodaldialog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\shared\\_createmodaldialog.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:models\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\views\\country\\_createmodalform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\country\\_createmodalform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\views\\city\\_createmodalform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\city\\_createmodalform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|d:\\repos\\ajax-hindeline\\advancedajax\\views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F187594C-01F9-479B-A5BB-01A8E95016ED}|AdvancedAJAX.csproj|solutionrelative:views\\customer\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "_CreateModalDialog.cshtml",
+              "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Shared\\_CreateModalDialog.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_CreateModalDialog.cshtml",
+              "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Shared\\_CreateModalDialog.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_CreateModalDialog.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-26T16:33:17.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Create.cshtml",
               "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Customer\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Customer\\Create.cshtml",
               "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Customer\\Create.cshtml",
               "RelativeToolTip": "Views\\Customer\\Create.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAuwIwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-21T16:15:20.135Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "site.js",
               "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
               "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\wwwroot\\js\\site.js",
               "RelativeToolTip": "wwwroot\\js\\site.js",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAkwCEAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAqwHMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-05-21T16:08:10.712Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "_CreateModalForm.cshtml",
               "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Country\\_CreateModalForm.cshtml",
               "RelativeDocumentMoniker": "Views\\Country\\_CreateModalForm.cshtml",
               "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\Country\\_CreateModalForm.cshtml",
               "RelativeToolTip": "Views\\Country\\_CreateModalForm.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-21T16:04:49.571Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "_CreateModalForm.cshtml",
               "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\City\\_CreateModalForm.cshtml",
               "RelativeDocumentMoniker": "Views\\City\\_CreateModalForm.cshtml",
-              "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\City\\_CreateModalForm.cshtml*",
-              "RelativeToolTip": "Views\\City\\_CreateModalForm.cshtml*",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAkAAAAAAAAAA==",
+              "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Views\\City\\_CreateModalForm.cshtml",
+              "RelativeToolTip": "Views\\City\\_CreateModalForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAABeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-05-21T16:04:18.745Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "City.cs",
               "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Models\\City.cs",
               "RelativeDocumentMoniker": "Models\\City.cs",
               "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Models\\City.cs",
               "RelativeToolTip": "Models\\City.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T16:00:08.345Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "CityController.cs",
               "DocumentMoniker": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Controllers\\CityController.cs",
               "RelativeDocumentMoniker": "Controllers\\CityController.cs",
               "ToolTip": "D:\\repos\\AJAX-hindeline\\AdvancedAJAX\\Controllers\\CityController.cs",
               "RelativeToolTip": "Controllers\\CityController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAUwHIAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAwwFUAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-21T15:57:11.578Z",
               "EditorCaption": ""
