@@ -1,11 +1,15 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using AdvancedAJAX.Data;
+using AdvancedAJAX.Models;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Data.SqlClient;
 
 namespace AdvancedAJAX.Controllers
 {
     public class CustomerController : Controller
     {
         private readonly AppDbContext _context;
-
         private readonly IWebHostEnvironment _webHost;
 
         public CustomerController(AppDbContext context, IWebHostEnvironment webHost)
@@ -16,9 +20,9 @@ namespace AdvancedAJAX.Controllers
 
         public IActionResult Index()
         {
-            List<Customer> Cities;
-            Cities = _context.Customers.ToList();
-            return View(Cities);
+            List<Customer> Customers;
+            Customers = _context.Customers.ToList();
+            return View(Customers);
         }
 
         [HttpGet]
@@ -26,6 +30,7 @@ namespace AdvancedAJAX.Controllers
         {
             Customer Customer = new Customer();
             ViewBag.Countries = GetCountries();
+            ViewBag.Cities = new List<SelectListItem>();
             return View(Customer);
         }
 
@@ -33,32 +38,63 @@ namespace AdvancedAJAX.Controllers
         [HttpPost]
         public IActionResult Create(Customer customer)
         {
-
             string uniqueFileName = GetProfilePhotoFileName(customer);
             customer.PhotoUrl = uniqueFileName;
 
-            _context.Add(customer);
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            try
+            {
+                _context.Add(customer);
+                _context.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+            catch (DbUpdateException ex)
+            {
+                if (ex.InnerException is SqlException sqlEx && sqlEx.Number == 547)
+                {
+                    ViewBag.Countries = GetCountries();
+                    // Fix CS0104: If customer.CountryId is int, it's not nullable. No need for ??
+                    // If customer.CountryId can genuinely be null (e.g., from a form submission where it's not selected),
+                    // then change the Customer.CountryId property to int? (nullable int).
+                    // Assuming for now it's 'int' and always has a value or we default to 0 for initial city load.
+                    int selectedCountryId = customer.CountryId; // Removed ?? 0 if CountryId is int. If it's int?, keep it.
+
+                    // The error on line 56, "Html.ViewBag.Cities" indicates you tried to use Html in controller.
+                    // This is incorrect. You simply assign to ViewBag.Cities.
+                    ViewBag.Cities = GetCities(selectedCountryId); // Fix CS1061 and CS1503
+
+                    ModelState.AddModelError("", "The selected City is invalid or does not exist. Please select a valid City.");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "An unexpected error occurred while creating the customer. Please try again.");
+                }
+
+                return View(customer);
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Countries = GetCountries();
+                // Fix CS0104:
+                ViewBag.Cities = GetCities(customer.CountryId); // Removed ?? 0 if CountryId is int.
+                ModelState.AddModelError("", $"An unexpected error occurred: {ex.Message}");
+                return View(customer);
+            }
         }
 
         [HttpGet]
         public IActionResult Details(int Id)
-        { 
-
+        {
             Customer customer = _context.Customers
                 .Include(cty => cty.City)
                 .Include(cou => cou.City.Country)
                 .Where(c => c.Id == Id).FirstOrDefault();
-
 
             return View(customer);
         }
 
         [HttpGet]
         public IActionResult Edit(int Id)
-        { 
-    
+        {
             Customer customer = _context.Customers
                 .Include(co => co.City)
                 .Where(c => c.Id == Id).FirstOrDefault();
@@ -68,7 +104,6 @@ namespace AdvancedAJAX.Controllers
             ViewBag.Countries = GetCountries();
             ViewBag.Cities = GetCities(customer.CountryId);
 
-
             return View(customer);
         }
 
@@ -76,7 +111,6 @@ namespace AdvancedAJAX.Controllers
         [HttpPost]
         public IActionResult Edit(Customer customer)
         {
-
             if (customer.ProfilePhoto != null)
             {
                 string uniqueFileName = GetProfilePhotoFileName(customer);
@@ -91,25 +125,75 @@ namespace AdvancedAJAX.Controllers
 
         [HttpGet]
         public IActionResult Delete(int Id)
-        { 
-            Customer customer = _context.Customers.Where(c =>c.Id == Id).FirstOrDefault();
+        {
+            Customer customer = _context.Customers
+                .Include(c => c.City)
+                    .ThenInclude(city => city.Country)
+                .Where(c => c.Id == Id)
+                .FirstOrDefault();
+
+            if (customer == null)
+            {
+                return NotFound();
+            }
             return View(customer);
         }
 
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        [HttpPost]
-        public IActionResult Delete(Customer customer)
+        public IActionResult DeleteConfirmed(int id)
         {
-            _context.Attach(customer);
-            _context.Entry(customer).State = EntityState.Deleted;
-            _context.SaveChanges();
-            return RedirectToAction(nameof(Index));
+            var customerToDelete = _context.Customers.Find(id);
+
+            if (customerToDelete == null)
+            {
+                return NotFound();
+            }
+
+            try
+            {
+                if (!string.IsNullOrEmpty(customerToDelete.PhotoUrl) && customerToDelete.PhotoUrl != "noimage.png")
+                {
+                    string filePath = Path.Combine(_webHost.WebRootPath, "images", customerToDelete.PhotoUrl);
+                    if (System.IO.File.Exists(filePath))
+                    {
+                        System.IO.File.Delete(filePath);
+                    }
+                }
+
+                _context.Customers.Remove(customerToDelete);
+                _context.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+            catch (DbUpdateException ex)
+            {
+                if (ex.InnerException is SqlException sqlEx && sqlEx.Number == 547)
+                {
+                    _context.Entry(customerToDelete).Reload();
+                    _context.Entry(customerToDelete).State = EntityState.Unchanged;
+
+                    ModelState.AddModelError("", "Cannot delete this customer because there are associated records in other tables (e.g., Orders). Please ensure no other data depends on this customer.");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "An error occurred while deleting the customer. Please try again.");
+                }
+
+                var customerToReturn = _context.Customers.Include(c => c.City).ThenInclude(city => city.Country).FirstOrDefault(c => c.Id == id);
+                return View(customerToReturn);
+            }
+            catch (Exception ex)
+            {
+                ModelState.AddModelError("", $"An unexpected error occurred: {ex.Message}");
+                var customerToReturn = _context.Customers.Include(c => c.City).ThenInclude(city => city.Country).FirstOrDefault(c => c.Id == id);
+                return View(customerToReturn);
+            }
         }
 
-        private List<SelectListItem> GetCountries()
+        [HttpGet]
+        public JsonResult GetCountries()
         {
             var lstCountries = new List<SelectListItem>();
-
             List<Country> Countries = _context.Countries.ToList();
 
             lstCountries = Countries.Select(ct => new SelectListItem()
@@ -125,36 +209,24 @@ namespace AdvancedAJAX.Controllers
             };
 
             lstCountries.Insert(0, defItem);
-
-            return lstCountries;
+            return Json(lstCountries);
         }
 
         [HttpGet]
         public JsonResult GetCitiesByCountry(int countryId)
         {
-            List<SelectListItem> cities = _context.Cities
-                .Where(c => c.CountryId == countryId)
-                .OrderBy(n => n.Name)
-                .Select(n =>
-                new SelectListItem
-                {
-                    Value = n.Id.ToString(),
-                    Text = n.Name
-                }).ToList();
-
+            List<SelectListItem> cities = GetCities(countryId);
             return Json(cities);
-                
         }
 
         private string GetProfilePhotoFileName(Customer customer)
         {
             string uniqueFileName = null;
-
             if (customer.ProfilePhoto != null)
             {
                 string uploadsFolder = Path.Combine(_webHost.WebRootPath, "images");
                 uniqueFileName = Guid.NewGuid().ToString() + "_" + customer.ProfilePhoto.FileName;
-                string filePath = Path.Combine (uploadsFolder, uniqueFileName);
+                string filePath = Path.Combine(uploadsFolder, uniqueFileName);
                 using (var fileStream = new FileStream(filePath, FileMode.Create))
                 {
                     customer.ProfilePhoto.CopyTo(fileStream);
@@ -165,7 +237,6 @@ namespace AdvancedAJAX.Controllers
 
         private List<SelectListItem> GetCities(int countryId)
         {
-
             List<SelectListItem> cities = _context.Cities
                 .Where(c => c.CountryId == countryId)
                 .OrderBy(n => n.Name)
@@ -176,10 +247,20 @@ namespace AdvancedAJAX.Controllers
                     Text = n.Name
                 }).ToList();
 
+            if (cities.Any())
+            {
+                cities.Insert(0, new SelectListItem() { Value = "", Text = "----Select City----" });
+            }
+            else if (countryId != 0 && _context.Countries.Any(c => c.Id == countryId))
+            {
+                cities.Insert(0, new SelectListItem() { Value = "", Text = "----No Cities Available----" });
+            }
+            else
+            {
+                cities.Insert(0, new SelectListItem() { Value = "", Text = "----Select City----" });
+            }
+
             return cities;
         }
-
-
-
     }
 }

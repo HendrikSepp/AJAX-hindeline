@@ -1,23 +1,23 @@
-﻿namespace AdvancedAJAX.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace AdvancedAJAX.Models
 {
     public class Country
     {
-        [Key]
-
         public int Id { get; set; }
 
         [Required]
-        [MaxLength(3)]
-
+        [StringLength(3)]
         public string Code { get; set; }
 
         [Required]
-        [MaxLength(75)]
-
+        [StringLength(75)]
         public string Name { get; set; }
 
-        [MaxLength(75)]
+        [Display(Name = "Currency/Name")]
+        [StringLength(75)]
+        public string? CurrencyName { get; set; }
 
-        public string CurrencyName { get; set; } = "";
+        public ICollection<City>? Cities { get; set; }
     }
 }

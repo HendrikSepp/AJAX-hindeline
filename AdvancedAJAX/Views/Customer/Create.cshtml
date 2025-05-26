@@ -51,11 +51,12 @@
 
             <div class="form-group btn-group col-12">
                 <div class="col-11">
-                     <label asp-for="CountryId" class="control-label"></label>
-                        <select id="lstCountryId" asp-for="CountryId" class="form-control" asp-items="ViewBag.Countries"
+                    <label asp-for="CountryId" class="control-label"></label>
+                    <select id="lstCountryId" asp-for="CountryId" class="form-control" asp-items="ViewBag.Countries"
                             onchange="FillCities(this,'lstCity');"></select>
-                            </div>
-                    <div class="col-1 mt-4">
+                    <span asp-validation-for="CountryId" class="text-danger"></span>
+                </div>
+                <div class="col-1 mt-4">
                     <button class="btn btn-success" type="button" onclick="ShowCountryCreateModal();">
                         +
                     </button>
@@ -64,15 +65,16 @@
             </div>
 
             <div class="form-group btn-group col-12">
-            <div class="col-11">
-                <label asp-for="CityId" class="control-label"></label>
-                <select id="lstCity" asp-for="CityId" class="form-control" asp-items="ViewBag.Cities"></select>
-            </div>
-            <div class="col-1 mt-4">
-                <button class="btn btn-success" onclick="ShowCityCreateModal();">
-                    +
-                </button>
-            </div>
+                <div class="col-11">
+                    <label asp-for="CityId" class="control-label"></label>
+                    <select id="lstCity" asp-for="CityId" class="form-control" asp-items="ViewBag.Cities"></select>
+                    <span asp-validation-for="CityId" class="text-danger"></span>
+                </div>
+                <div class="col-1 mt-4">
+                    <button class="btn btn-success" type="button" onclick="ShowCityCreateModal();">
+                        +
+                    </button>
+                </div>
             </div>
 
             <div class="col-md-12 btn-group pb-2">
@@ -123,10 +125,110 @@
 
     <script type="text/javascript">
 
-            function ShowCountryCreateModal() {
+        function ShowCreateModalForm() {
+            $('#DivCreateDialogHolder').modal('show');
+        }
+
+        function refreshCountryList(newCountryId, newCountryName) {
+            $('#DivCreateDialogHolder').modal('hide');
+
+            $.ajax({
+                url: "/Customer/GetCountries",
+                type: 'get',
+                success: function (response) {
+                    var lstCountry = document.getElementById('lstCountryId');
+                    lstCountry.innerHTML = '';
+
+                    for (var i = 0; i < response.length; i++) {
+                        var option = document.createElement('option');
+                        option.value = response[i].value;
+                        option.text = response[i].text;
+                        lstCountry.appendChild(option);
+                    }
+
+                    if (newCountryId) {
+                        $('#lstCountryId').val(newCountryId);
+                        FillCities(lstCountry, 'lstCity');
+                    } else if (response.length > 0 && response[0].value !== "") {
+                        $('#lstCountryId').val(response[0].value);
+                        FillCities(lstCountry, 'lstCity');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error refreshing country list: " + error);
+                }
+            });
+        }
+
+        function refreshCityList(newCityId, newCityName) {
+            var lstCountryCtrl = document.getElementById('lstCountryId');
+            var countryId = lstCountryCtrl.options[lstCountryCtrl.selectedIndex].value;
+
+            $('#DivCreateDialogHolder').modal('hide');
+
+            $.ajax({
+                url: "/Customer/GetCitiesByCountry?countryId=" + countryId,
+                type: 'get',
+                success: function (response) {
+                    var lstCity = document.getElementById('lstCity');
+                    lstCity.innerHTML = '';
+
+                    for (var i = 0; i < response.length; i++) {
+                        var option = document.createElement('option');
+                        option.value = response[i].value;
+                        option.text = response[i].text;
+                        lstCity.appendChild(option);
+                    }
+
+                    if (newCityId) {
+                        $('#lstCity').val(newCityId);
+                    } else if (response.length > 0) {
+                        if (response[0].value !== "" && response[0].value !== "0") {
+                             $('#lstCity').val(response[0].value);
+                        } else if (response.length > 1) {
+                            $('#lstCity').val(response[1].value);
+                        }
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("Error refreshing city list: " + error);
+                }
+            });
+        }
+
+        function FillCities(obj, CityListId) {
+            var countryId = obj.options[obj.selectedIndex].value;
+            var CityList = document.getElementById(CityListId);
+
+            CityList.innerHTML = '';
+
+            if (countryId !== "") {
                 $.ajax(
+                    {
+                        url: "/Customer/GetCitiesByCountry?countryId=" + countryId,
+                        type: 'get',
+                        success: function (response) {
+                            for (var i = 0; i < response.length; i++) {
+                                var option = document.createElement('option');
+                                option.value = response[i].value;
+                                option.text = response[i].text;
+                                CityList.appendChild(option);
+                            }
+                            $('#' + CityListId).trigger('change');
+                        }
+                    });
+            } else {
+                var option = document.createElement('option');
+                option.value = "";
+                option.text = "----Select City----";
+                CityList.appendChild(option);
+            }
+        }
+
+        function ShowCountryCreateModal() {
+            $.ajax(
                 {
-                    url: "/country/CreateModalForm",
+                    url: "/Country/CreateModalForm",
                     type: 'get',
                     success: function (response) {
                         $("#DivCreateDialog").html(response);
@@ -136,6 +238,59 @@
             return;
         }
 
-    </script>
+        function ShowCityCreateModal() {
+            var lstCountryCtrl = document.getElementById('lstCountryId');
+            var countryId = lstCountryCtrl.options[lstCountryCtrl.selectedIndex].value;
+            var countryName = lstCountryCtrl.options[lstCountryCtrl.selectedIndex].text;
 
+            if (!countryId || countryId === "") {
+                alert("Please select a country first to create a city.");
+                return;
+            }
+
+            $.ajax(
+                {
+                    url: "/City/CreateModalForm?countryId=" + countryId + "&countryName=" + encodeURIComponent(countryName),
+                    type: 'get',
+                    success: function (response) {
+                        $("#DivCreateDialog").html(response);
+                        ShowCreateModalForm();
+                    }
+                });
+            return;
+        }
+
+        function submitModalForm() {
+            var form = $('#DivCreateDialog').find('form');
+            if (form.length === 0) {
+                console.error("Form not found in modal dialog.");
+                return;
+            }
+
+            if (!form.valid()) {
+                return;
+            }
+
+            var formAction = form.attr('asp-action') || form.attr('action');
+            var isCountryForm = formAction.includes("Country");
+
+            $.ajax({
+                url: form.attr('action'),
+                type: 'POST',
+                data: form.serialize(),
+                success: function (response) {
+                    if (isCountryForm) {
+                        refreshCountryList(response.id, response.name);
+                    } else {
+                        refreshCityList(response.id, response.name);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.error("Modal form submission error: " + error);
+                    $("#DivCreateDialog").html(xhr.responseText);
+                }
+            });
+        }
+
+    </script>
 }
